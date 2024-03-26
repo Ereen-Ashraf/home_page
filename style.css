@@ -1,0 +1,895 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header{
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 80px;
+}
+
+header h3{
+    color: rgb(205, 144, 46);
+    font-size: 25px;
+}
+
+header nav ul{
+    list-style: none;
+    color: rgb(148, 145, 145);
+    font-weight: bold;
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+header ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li:hover{
+    color: black;
+    cursor: pointer;
+}
+
+header nav ul li::after{
+    transition: .7s ease-in-out;
+    content: "";
+    display: block;
+    width: 0;
+    height: 2.3px;
+    margin-top: 5px;
+    background-color: black;
+}
+
+header nav ul li:hover::after{
+    width: 100%;
+}
+
+header div button{
+    background-color: transparent;
+    border: rgb(205, 144, 46) solid 1.5px;
+    color: rgb(205, 144, 46);
+    padding: 10px 22px;
+    text-transform: uppercase;
+    margin-right: 15px;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 6px;
+}
+
+header div button:hover{
+    background-color: rgb(205, 144, 46);
+    color: white;
+    transition: .7s ease;
+    cursor: pointer;
+}
+
+.sec1 .img_background{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("img/hotel_2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    padding-top: 20%;
+} 
+.sec1 .contain{
+    width: 50em;
+    margin: auto;
+    padding: 30px 35px;
+    border-radius: 6px;
+    background-color: rgb(148, 145, 145);
+    box-shadow: 1px 1px 3px .5px rgb(77, 76, 76);
+}
+
+.sec1 h3{
+    color: white;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 27px;
+}
+.sec1 p{
+    color: rgb(240, 236, 236);
+    font-size: 18px;
+}
+
+.sec2 .above_card{
+    padding: 5% 20% 4%;
+    text-align: center;
+}
+.sec2 .line1, .sec4 .line1{
+    width: 10em;
+    height: 3.5px;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(205, 144, 46);
+}
+
+.sec2 h3{
+    margin-top: 30px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.sec2 .par{
+    font-size: 18px;
+    margin-top: 25px;
+    color: rgb(100, 94, 94);
+}
+
+
+.sec2 .container_card, .sec4 .container_card{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sec2 .container_card .card{
+    width: 20em;
+    margin:0px 12px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-bottom:40px;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(1 1 1 / 15%);
+}
+
+
+.sec2 .container_card .card .sec2_img_bove{
+    width: 16.5em;
+    height: 200px;
+    border-radius: 6px;
+    display: block;
+    margin: auto;
+    box-shadow: 1px 1px 3px 0 rgb(112, 109, 109);
+}
+.sec2 .container_card .card .info p{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 8px;
+}
+.sec2 .container_card .card .info hr{
+    width: 17em;
+    height: 2px;
+    margin: auto;
+    background-color: rgb(100, 94, 94);
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 50%;
+}
+
+.sec2 .container_card .card .sec2_end_card img{
+    width: 23px;
+    height: 25px;
+    margin-right: 10px;
+
+}
+
+.sec2 .container_card .card .info div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 13px;
+    color: rgb(100, 94, 94);
+    margin-top: 10px;
+    align-items: center;
+}
+
+.sec2 .container_card .card .info div del{
+    color: red;
+    font-size: 11px;
+}
+
+.sec2 .container_card .card .info button{
+    border: rgb(205, 144, 46) solid 2px;
+    background-color: rgb(205, 144, 46);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.sec2 .btn_bottom_card{
+    text-align: center;
+}
+.sec2 .btn_bottom_card button{
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 16px 21px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(205, 144, 46);
+    border: rgb(205, 144, 46) solid 1px;
+    box-shadow: 2px 2px 2px 0px rgb(206, 167, 103);
+}
+
+
+.sec3, .sec4{
+    margin-top: 6%;
+}
+
+.container_sec3{
+    padding: 5em;
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    grid-gap: 5px;
+    justify-content: center;
+    grid-template-areas: 
+    "box1 box1 box2"
+    "box1 box1 box2"
+    "box3 box4 box2"
+    ;
+    background-color: rgb(222, 218, 218);
+}
+.box1{
+    grid-area: box1;
+}
+.box2{
+    grid-area: box2;
+}
+.box3{
+    grid-area: box3;
+}
+.box4{
+    grid-area: box4;
+}
+
+.box1 img{
+    width: 100%;
+    height: 320px;
+}
+.box3 img, .box4 img{
+    width: 100%;
+    height: 110px;
+}
+
+.box1 img, .box2, .box3 img, .box4 img{
+    border-radius: 6px;
+}
+.contain_form{
+    border: 1px rgb(190, 188, 188) solid;
+    background-color: white;
+    text-align: center;
+}
+.contain_form h2{
+    font-size: 17px;
+    color: black;
+    margin: 80px 0px 60px;
+    text-transform: uppercase;
+}
+.contain_form input{
+    margin-top: 10px;
+    width: 80%;
+    padding: 8px 8px 8px 12px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px 0 rgb(107, 103, 103);
+    background-color: rgba(245, 241, 241, 0.788);
+    border: 1px solid rgb(229, 224, 224);
+    
+}
+.contain_form input[placeholder]{
+    font-size: 12px;
+}
+
+.contain_form input:focus{
+    outline: none;
+}
+
+.contain_form .btn_form{
+    width: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 6px;
+    background-color: rgb(205, 144, 46);
+    border: rgb(205, 144, 46) solid 2px;
+}
+
+
+.footer_sec3{
+    color: white;
+    background-color: rgb(144, 140, 140);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+.footer_sec3 .d1_footer_sec3{
+    width: 25em;
+    text-transform: uppercase;
+}
+
+.footer_sec3 .d2_footer_sec3, .footer_sec3 .d3_footer_sec3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_sec3 .d2_footer_sec3 img{
+    width: 35px;
+}
+.footer_sec3 .d3_footer_sec3 img{
+    width: 38px;
+}
+
+.footer_sec3 .d2_footer_sec3 pre, .footer_sec3 .d3_footer_sec3 pre{
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+
+.sec4 .above_card{
+    text-align: center;
+}
+.sec4 .above_card h3{
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+.sec4 .container_card{
+    margin-top: 40px;
+}
+
+
+.sec4 .card{
+    padding-top: 30px;
+    text-align: center;
+    width: 25%;
+    margin:0px 12px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px 0 rgb(222, 218, 218);
+    border: 1.5px rgb(232, 224, 224) solid;
+    background-color: rgba(245, 241, 241, 0.788);
+}
+
+.sec4 .card .top_img img{
+    width: 5em;
+    height: 70px;
+}
+.sec4 .container_card .card .info h3{
+    margin: 25px 0px;
+    text-transform: uppercase;
+}
+
+
+.sec4 .container_card .card .info p{
+    opacity: .4;
+    margin: auto;
+    width: 60%;
+    height: 10em;
+    font-size: 14px;
+}
+
+.sec4 .card .bottom_img img{
+    width: 42%;
+    height: 85px;
+}
+
+.sec4 .container_circle{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+.sec4 .circle{
+    width: 11px;
+    height: 11px;
+    background-color: transparent;
+    margin-left: 5px;
+    border-radius: 50%;
+    border: 1px solid rgb(205, 144, 46);
+}
+.sec4 .c1{
+    background-color: rgb(205, 144, 46);
+}
+
+.sec4 .line1{
+    margin-bottom: 50px;
+}
+
+.foot {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-image: url("img/footer_background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 10px;
+    box-shadow: 0 -1px 3px 1px rgb(100, 142, 176);
+}
+
+.foot .d1{
+    width: 30%;
+    margin-right: 10%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    box-shadow: .5px .5px 3px 1px rgb(140, 177, 197);
+}
+
+.foot img{
+    width: 35px;
+    height: 35px
+}
+
+.foot p{
+    margin-bottom: 15px;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.foot .d1 img{
+    margin-left: 10px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-color: rgb(114, 90, 50);
+    padding: 4px;
+    box-shadow: 1px 1px 3px 0 rgb(238, 221, 221);
+}
+.foot .d1 img:hover{
+    cursor: pointer;
+}
+
+
+
+
+@media (min-width:769px) and (max-width:1024px){
+
+    header{
+        padding: 20px;
+    }
+    
+    header h3{
+        font-size: 23px;
+    }
+    
+    header nav ul{
+        margin-left: 20px;
+    }
+    
+    header ul li{
+        margin-right: 10px;
+    }
+
+    header div button{
+        padding: 9px;
+        margin-right: 1px;
+        margin-left: 3px;
+        font-size: 12px;
+        border-radius: 50%;
+    }
+
+
+    .sec1 .img_background{
+        height: 90vh;
+        padding-top: 15%;
+    } 
+    .sec1 .contain{
+        width: 37em;
+        padding: 25px;
+    }
+    
+    .sec1 h3{
+        margin-bottom: 22px;
+        font-size: 25px;
+    }
+    .sec1 p{
+        font-size: 17px;
+        line-height: 17px;
+    }
+
+
+    .sec2 .above_card{
+        padding: 5% 13% 4%;
+    }
+    
+    .sec2 h3{
+        font-size: 23px;
+    }
+    .sec2 .par{
+        font-size: 18px;
+    }
+
+    
+    .sec2 .container_card .card{
+        width: 18.5em;
+        padding-bottom: 30px;
+        padding-top: 20px;
+        margin-bottom:25px;
+    }
+    
+    
+    .sec2 .container_card .card .sec2_img_bove{
+        height: 190px;
+    }
+    .sec2 .container_card .card .info p{
+        padding: 13px;
+        font-size: 21px;
+    }
+    
+    .sec2 .container_card .card .sec2_end_card img{
+        width: 22px;
+        height: 25px;
+        margin-right: 10px;
+    }
+
+    .sec2 .btn_bottom_card button{
+        font-size: 13px;
+        padding: 15px 13px;
+        border-radius: 25px;
+    }
+
+    .container_sec3{
+        padding: 5em;
+        display: grid;
+        grid-template-columns: repeat(3, 32%);
+    }
+    .contain_form h2{
+        font-size: 15px;
+        margin: 80px 0px 50px;
+    }
+
+    .box1 img{
+        height: 280px;
+    }
+    .box3 img, .box4 img{
+        height: 100px;
+    }
+
+    .footer_sec3{
+        height: 70px;
+    }
+    .footer_sec3 .d1_footer_sec3{
+        width: 22em;
+        margin-left: 10px;
+    }
+    .footer_sec3 .d1_footer_sec3 h3{
+        font-size: 17px;
+    }
+    
+    .footer_sec3 .d2_footer_sec3, .footer_sec3 .d3_footer_sec3{
+        flex-wrap: nowrap;
+    }
+    
+    .footer_sec3 .d2_footer_sec3 pre, .footer_sec3 .d3_footer_sec3 pre{
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+
+    .footer_sec3 .d2_footer_sec3 img{
+        width: 33px;
+    }
+    .footer_sec3 .d3_footer_sec3 img{
+        width: 36px;
+    }
+
+    .sec4 .line1{
+        margin-bottom: 30px;
+    }
+
+.sec4 .above_card h3{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.sec4 .container_card{
+    margin-top: 35px;
+}
+
+.sec4 .card{
+    padding-top: 30px;
+    width: 38%;
+    margin:0px 8px 15px;
+}
+
+.sec4 .card .top_img img{
+    width: 5em;
+    height: 70px;
+}
+.sec4 .container_card .card .info h3{
+    margin: 20px 0px;
+}
+
+.sec4 .container_circle{
+    margin-bottom: 20px;
+    margin-top: 7px;
+}
+.sec4 .circle{
+    width: 13px;
+    height: 13px;
+    margin-left: 6px;
+}
+
+.sec4 .line1{
+    margin-bottom: 40px;
+}
+
+
+
+
+.foot {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-image: url("img/footer_background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 10px;
+    box-shadow: 0 -1px 3px 1px rgb(100, 142, 176);
+}
+
+.foot .d1{
+    width: 40%;
+    margin-right: 7%;
+    margin-top: 7px;
+    line-height: 15px;
+}
+
+.foot img{
+    width: 30px;
+    height: 30px
+}
+
+.foot p{
+    margin-bottom: 10px;
+    font-size: 14.5px;
+}
+
+.foot .d1 img{
+    margin-left: 7px;
+}
+
+}
+
+
+
+
+@media (min-width:481px) and (max-width:768px){
+
+    
+header{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+header h3{
+    font-size: 22px;
+    width: 40%;
+}
+
+header nav ul{
+    margin-left: 15px;
+    font-size: 14px;
+    width: 60%;
+}
+
+header ul li{
+    margin-right: 1px;
+}
+header .btn_header{
+    width: 20%;
+}
+
+header div button{
+    padding: 10px 12px;
+    margin-right: 2px;
+    font-size: 12px;
+    border-radius: 50%;
+    margin-bottom: 3px;
+}
+
+    .sec1 .img_background{
+        height: 80vh;
+        padding-top: 8%;
+    } 
+    .sec1 .contain{
+        width: 60%;
+        padding: 20px;
+    }
+    
+    .sec1 h3{
+        margin-bottom: 15px;
+        font-size: 23px;
+        width: 10em;
+    }
+    .sec1 p{
+        font-size: 16.5px;
+        line-height: 17px;
+        margin-bottom: 10px;
+    }
+
+
+    .sec2 .above_card{
+        padding: 5% 13% 4%;
+    }
+    
+    .sec2 h3{
+        font-size: 22px;
+    }
+    .sec2 .par{
+        font-size: 17px;
+    }
+
+    
+    .sec2 .container_card .card{
+        width: 18.5em;
+        padding-bottom: 30px;
+        padding-top: 20px;
+        margin-bottom:25px;
+    }
+    
+    
+    .sec2 .container_card .card .sec2_img_bove{
+        height: 190px;
+    }
+    .sec2 .container_card .card .info p{
+        padding: 13px;
+        font-size: 21px;
+    }
+    
+    .sec2 .container_card .card .sec2_end_card img{
+        width: 22px;
+        height: 25px;
+        margin-right: 10px;
+    }
+
+    .sec2 .btn_bottom_card button{
+        font-size: 12px;
+        padding: 13px;
+        border-radius: 25px;
+    }
+
+    .container_sec3{
+        padding: 5em;
+        grid-template-columns: repeat(3, 45%);
+    }
+    .contain_form h2{
+        font-size: 15px;
+        margin: 60px 0px 30px;
+    }
+
+    .contain_form .btn_form{
+        width: 60%;
+        font-size: 11px;
+    }
+
+    .box1 img{
+        height: 250px;
+    }
+    .box3 img, .box4 img{
+        height: 90px;
+    }
+
+    .footer_sec3{
+        height: 80px;
+    }
+    .footer_sec3 .d1_footer_sec3{
+        width: 13em;
+        margin-left: 10px;
+    }
+    .footer_sec3 .d1_footer_sec3 h3{
+        font-size: 14px;
+    }
+    
+    .footer_sec3 .d2_footer_sec3 pre, .footer_sec3 .d3_footer_sec3 pre{
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 13px;
+    }
+
+    .footer_sec3 .d2_footer_sec3 img{
+        width: 30px;
+        margin-left: 30%;
+    }
+    .footer_sec3 .d3_footer_sec3 img{
+        width: 32px;
+        margin-left: 30%;
+    }
+
+
+.sec4 .above_card h3{
+    font-size: 18px;
+}
+
+.sec4 .container_card{
+    margin-top: 35px;
+}
+
+.sec4 .card{
+    padding-top: 25px;
+    width: 53%;
+}
+
+.sec4 .card .top_img img{
+    width: 4.3em;
+    height: 55px;
+}
+
+.sec4 .card .bottom_img img{
+    width: 40%;
+    height: 80px;
+    margin-top: 20px;
+}
+.sec4 .container_card .card .info h3{
+    margin: 15px 0px;
+}
+.sec4 .container_card .card .info p{
+    font-size: 14px;
+}
+
+.sec4 .container_circle{
+    margin-bottom: 20px;
+    margin-top: 7px;
+}
+.sec4 .circle{
+    width: 11px;
+    height: 11px;
+    margin-left: 6px;
+}
+
+.sec4 .line1{
+    margin-bottom: 40px;
+}
+
+
+.foot {
+    justify-content: center;
+    padding: 1px;
+}
+
+.foot .d1{
+    width: 90%;
+    margin:10px;
+    line-height: 15px;
+}
+
+.foot img{
+    width: 28px;
+    height: 28px
+}
+
+.foot p{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.foot .d1 img{
+    margin-left: 5px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
